@@ -1,0 +1,79 @@
+body{
+    background-image: url("http://rhinoden.rangerup.com/wp-content/uploads/2010/01/wallpaper-dtom-1920x12001.gif");
+    background-size: 100%;
+    font-family: 'Yeon Sung', cursive;
+}
+
+h1{
+    text-align: center;
+    color: #f5dd02;
+}
+
+.player-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#player{
+    width: 50%;
+}
+
+.canvas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+span{
+    border: 1em;
+    margin: 30px;
+}
+
+.imgdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#img{
+    max-width: 250px;
+}
+
+.btn-primary{
+    width: 200px;
+    background-color: #f5dd02;
+    font-family: 'Yeon Sung', cursive;
+    font-weight: 900;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#my-controls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#radio{
+    margin-left: 50px;
+}
+
+label{
+    color: white;
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
