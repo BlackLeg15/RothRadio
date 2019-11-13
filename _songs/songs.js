@@ -1,3 +1,11 @@
+Object.size = function (obj) {
+    var size = 0, key;
+    for (key in obj) {
+        if (obj.hasOwnProperty(key)) size++;
+    }
+    return size;
+};
+
 const songs = {
     0: {
         'name': 'Banco',
@@ -22,7 +30,7 @@ const songs = {
         'author': 'Matuê',
         'img': 'https://i1.sndcdn.com/artworks-q8ZbhR2tsy8s-0-t500x500.jpg',
         'link': 'https://cors-anywhere.herokuapp.com/https://s0.vocaroo.com/media/download_temp/Vocaroo_s0q7Fx1Br0ll.mp3',
-    }
+    },
 }
 
 var context = AudioContext || webkitAudioContext;
@@ -42,9 +50,18 @@ button.forEach((btn, index) => {
         img.src = songs[index].img;
         audio.src = songs[index].link;
         audio.play();
-    })
-    audio.addEventListener('ended', e => {
-        audio.src = songs[index + 1].link || songs[0].link;
     });
 });
 
+/*
+audio.addEventListener('ended', e => {
+    if (index >= Object.size(songs) - 1) {
+        img.src = songs[0].img;
+        audio.src = songs[0].link;
+    } else {
+        img.src = songs[index + 1].img;
+        audio.src = songs[index + 1].link;
+    }
+    audio.play();
+});
+*/

@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>ROTHRADIO - A rádio mais livre do universo 103</h1>
+    <h1>ROTHRADIO - Freedom & Private Property</h1>
     <div class="main">
         <div class="buttons">
             <button class="btn-primary">
@@ -33,21 +33,19 @@
             <br>
             <div id="my-controls">
                 <label for="vol"> Volume </label>
-                <input id="vol" type="range" min="0" max="2" step="0.01" />
+                <input id="vol" type="range" value="1" min="0" max="2" step="0.01" />
                 <span></span>
                 <label for="balance"> Balance </label>
-                <input id=balance type="range" min="-1" max="1" step="0.01" value=0 />
+                <input id=balance type="range" value=0 min="-1" max="1" step="0.01" />
             </div>
             <br>
             <div class="canvas">
-                <canvas id="myCanvasTime"></canvas>
-                <span></span>
-                <canvas id="myCanvasFreq"></canvas>
+                <canvas id="myCanvas"></canvas>
             </div>
         </div>
     </div>
     <script src="_songs/songs.js"></script>
-    <script src="audio.js"></script>
+    <script id="audiojs" src="_js/audio.js"></script>
 </body>
 
 </html>
